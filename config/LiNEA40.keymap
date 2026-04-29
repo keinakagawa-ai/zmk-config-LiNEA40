@@ -117,14 +117,6 @@
             tap-ms = <20>;
         };
 
-        lt: layer_toggle {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <250>;          // 250ms長押しでレイヤー切替
-            require-prior-idle-ms = <150>;    // 150ms以内の連打はタップとみなす
-            bindings = <&mo>, <&kp>;
-        };
     };
 
     keymap {
