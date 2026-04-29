@@ -113,20 +113,19 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-
             tap-ms = <20>;
         };
 
-　　　   lt: layer_toggle {
-     　　   compatible = "zmk,behavior-hold-tap";
-     　　　  #binding-cells = <2>;
-     　　   flavor = "hold-preferred";
-      　　  tapping-term-ms = <250>;
-      　　  quick-tap-ms = <200>;
-      　　  require-prior-idle-ms = <150>;
-      　　  bindings = <&mo>, <&kp>;
-   　　 };
-　　　};
+        lt: layer_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            bindings = <&mo>, <&kp>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
