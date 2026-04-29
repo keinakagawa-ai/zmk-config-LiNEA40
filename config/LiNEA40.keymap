@@ -125,6 +125,26 @@
             require-prior-idle-ms = <150>;
             bindings = <&mo>, <&kp>;
         };
+
+        fast_scroll: fast_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>; // 速い
+        };
+        mid_scroll: mid_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <100>; // 普通
+        };
+        slow_scroll: slow_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <300>; // 遅い
+        };
+
     };
 
     keymap {
@@ -138,7 +158,7 @@
 &mt LCTRL ESC  &mt TAB LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_3    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&fast_scroll>;
         };
 
         //1
@@ -162,7 +182,7 @@
 &kp NUMBER_0  &trans        &trans        &trans         &trans         &trans    &trans  &trans                           &trans          &trans           &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mid_scroll>;
         };
 
         //3
@@ -186,7 +206,7 @@
 &trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans              &trans               &trans  &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&slow_scroll>;
         };
 
         //5
