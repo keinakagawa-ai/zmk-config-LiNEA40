@@ -130,10 +130,10 @@
         my_lt: layer_toggle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <120>;
+            require-prior-idle-ms = <0>;
             bindings = <&mo>, <&kp>;
         };
     };
