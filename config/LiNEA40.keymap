@@ -147,7 +147,7 @@
 &mt LCTRL ESC  &mt TAB LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_1    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&mouse_scrl>;
         };
 
         //1
@@ -171,7 +171,7 @@
 &kp NUMBER_0  &trans        &trans        &trans         &trans         &trans    &trans  &trans                           &trans          &trans           &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&mouse_scrl>;
         };
 
         //3
@@ -195,7 +195,7 @@
 &trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans              &trans               &trans  &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&mouse_scrl>;
         };
 
         //5
