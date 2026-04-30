@@ -126,27 +126,10 @@
             bindings = <&mo>, <&kp>;
         };
 
-       // レイヤー 0: 通常スクロール（普通）
-        encoder_scroll_normal: encoder_scroll_normal {
+        encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCROLL_VERT(10)>, <&msc SCROLL_VERT(-10)>;
-            tap-ms = <20>;
-        };
-
-        // レイヤー 2: 速く（1.5〜3倍くらい）
-        encoder_scroll_fast: encoder_scroll_fast {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCROLL_VERT(25)>, <&msc SCROLL_VERT(-25)>;
-            tap-ms = <20>;
-        };
-
-        // レイヤー 4: 遅く（半分くらい）
-        encoder_scroll_slow: encoder_scroll_slow {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCROLL_VERT(5)>, <&msc SCROLL_VERT(-5)>;
+            #sensor-binding-cells = <2>;
+            bindings = <&kp SCROLL_UP>, <&kp SCROLL_DOWN>;
             tap-ms = <20>;
         };
 
@@ -163,7 +146,7 @@
 &mt LCTRL ESC  &mt TAB LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_1    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
-            sensor-bindings = <&encoder_scroll_normal>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         //1
@@ -187,7 +170,7 @@
 &kp NUMBER_0  &trans        &trans        &trans         &trans         &trans    &trans  &trans                           &trans          &trans           &trans
             >;
 
-            sensor-bindings = <&encoder_scroll_fast>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         //3
@@ -211,7 +194,7 @@
 &trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans              &trans               &trans  &trans
             >;
 
-            sensor-bindings = <&encoder_scroll_slow>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         //5
