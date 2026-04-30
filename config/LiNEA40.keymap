@@ -127,7 +127,7 @@
             tap-ms = <20>;
         };
 
-        my_lt: layer_toggle {
+        my_lm: layer_momentary {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -160,9 +160,9 @@
         default_layer {
             bindings = <
 &kp Q          &kp W             &kp E                    &kp R    &kp T                                                      &kp Y           &kp U  &kp I         &kp O          &kp P
-&kp A          &kp S             &kp D                    &kp F    &kp G                                                      &kp H           &kp J  &kp K         &kp L          &my_lt 5 MINUS
+&kp A          &kp S             &kp D                    &kp F    &kp G                                                      &kp H           &kp J  &kp K         &kp L          &my_lm 5 MINUS
 &kp Z          &kp X             &kp C                    &kp V    &kp B                                                      &kp N           &kp M  &kp COMMA     &kp DOT        &kp SLASH
-&mt LCTRL ESC  &mt TAB LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_1    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
+&mt LCTRL ESC  &mt TAB LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lm 1 SPACE  &my_lm 3 LANGUAGE_1    &my_lm 4 BACKSPACE  &my_lm 2 ENTER         &my_lm 6 TAB  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
