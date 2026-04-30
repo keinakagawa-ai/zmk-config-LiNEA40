@@ -126,23 +126,11 @@
             bindings = <&mo>, <&kp>;
         };
 
-        fast_scroll: fast_scroll {
+        enc_scroll: enc_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <200>; // 速い
-        };
-        mid_scroll: mid_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <8j0>; // 普通
-        };
-        slow_scroll: slow_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <30>; // 遅い
+            bindings = <&sensor_behavior>;
+            tap-ms = <100>;
         };
 
     };
@@ -158,7 +146,7 @@
 &mt LCTRL ESC  &mt TAB LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_1    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
-            sensor-bindings = <&fast_scroll>;
+            sensor-bindings = <&enc_scroll>;
         };
 
         //1
@@ -182,7 +170,7 @@
 &kp NUMBER_0  &trans        &trans        &trans         &trans         &trans    &trans  &trans                           &trans          &trans           &trans
             >;
 
-            sensor-bindings = <&mid_scroll>;
+            sensor-bindings = <&enc_scroll>;
         };
 
         //3
@@ -206,7 +194,7 @@
 &trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans              &trans               &trans  &trans
             >;
 
-            sensor-bindings = <&slow_scroll>;
+            sensor-bindings = <&enc_jscroll>;
         };
 
         //5
