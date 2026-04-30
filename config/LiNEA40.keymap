@@ -133,7 +133,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <180>;
             quick-tap-ms = <120>;
-            require-prior-idle-ms = <0>;
+            require-prior-idle-ms = <100>;
             bindings = <&mo>, <&kp>;
         };
     };
