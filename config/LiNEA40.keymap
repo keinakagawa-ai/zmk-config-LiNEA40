@@ -134,13 +134,6 @@
             bindings = <&mo>, <&kp>;
         };
 
-        mouse_scrl: mouse_wheel_scrl {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-            tap-ms = <10>;
-        };
-
     };
 
     keymap {
