@@ -53,7 +53,7 @@
 
     warp {
         layers = <2>;
-        input-processors = <&zip_wheel_scaler 3 1>;
+        input-processors = <&zip_wheel_scaler 4 1>;
     };
 
     precision {
