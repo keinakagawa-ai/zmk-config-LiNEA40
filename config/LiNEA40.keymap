@@ -47,15 +47,15 @@
 
 &msc_input_listener {
     normal {
-        layers = <default_layer>;
+        layers = <0>;
         input-processors = <&zip_wheel_scaler 2 1>;
     };
     warp {
-        layers = <MARK>;
+        layers = <2>;
         input-processors = <&zip_wheel_scaler 3 1>;
     };
     precision {
-        layers = <FUNCTION>;
+        layers = <4>;
         input-processors = <&zip_wheel_scaler 1 2>;
     };
 };
