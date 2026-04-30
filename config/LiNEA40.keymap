@@ -129,7 +129,7 @@
         encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <2>;
-            bindings = <&kp SCROLL_UP>, <&kp SCROLL_DOWN>;
+            bindings = <&kp SCRL_UP>, <&kp SCRL_DOWN>;
             tap-ms = <100>;
         };
 
