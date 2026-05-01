@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -30,7 +30,7 @@
     delay-ms = <3>;
     trigger-period-ms = <3>;
     time-to-max-speed-ms = <100>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <0>;
 };
 
 / {
@@ -53,7 +53,7 @@
 
     warp {
         layers = <2>;
-        input-processors = <&zip_wheel_scaler 2 1>;
+        input-processors = <&zip_wheel_scaler 4 1>;
     };
 
     precision {
