@@ -67,7 +67,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -151,6 +151,13 @@
             #binding-cells = <0>;
             bindings = <&none &kp N &kp POUND &kp AT &kp T &kp S &kp U &kp H &kp AT &kp LS(Y) &kp N0 &kp LS(R) &kp U>;
             label = "MY_WORD";
+        };
+
+        my_word_2: my_word_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N &kp POUND &kp AT &kp T &kp S &kp U &kp H &kp AT &kp LS(Y) &kp N0 &kp LS(R) &kp U>;
+            label = "MY_WORD_2";
         };
     };
 
