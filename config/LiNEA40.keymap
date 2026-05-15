@@ -67,7 +67,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -179,10 +179,10 @@
 
         MOUSE {
             bindings = <
-&kp APOS          &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACE    &kp RIGHT_BRACE                         &kp HOME          &kp END         &trans          &trans           &trans
-&kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &kp LS(EQUAL)                           &employee_number  &mkp MB1        &kp UP_ARROW    &trans           &trans
-&kp LS(NUMBER_1)  &kp LS(APOS)      &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)                        &my_word          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans            &trans            &trans            &trans            &trans            &trans    &kp DELETE  &trans                            &trans          &trans           &trans
+&kp APOS          &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACE    &kp RIGHT_BRACE                         &trans            &kp HOME        &kp END         &mkp MCLK        &trans
+&kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &kp LS(EQUAL)                           &employee_number  &mkp MB1        &kp UP_ARROW    &mkp RCLK        &trans
+&kp LS(NUMBER_1)  &kp LS(APOS)      &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)                        &my_word          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp UNDERSCORE
+&mt LCTRL ESCAPE  &mt LEFT_ALT TAB  &kp LEFT_GUI      &trans            &trans            &trans    &kp DELETE  &trans                            &trans          &trans           &kp RIGHT_SHIFT
             >;
         };
 
@@ -190,10 +190,10 @@
 
         MARK {
             bindings = <
-&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans         &trans                           &trans           &trans          &trans          &trans           &kp INT3
-&kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PAGE_UP    &kp SEMICOLON                    &kp C_VOLUME_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp EQUAL
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PAGE_DOWN  &kp COLON                        &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INT1
-&kp NUMBER_0  &trans        &trans        &trans         &trans         &trans    &trans  &trans                           &trans          &trans           &trans
+&kp PAGE_UP       &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &trans                           &trans           &kp HOME        &kp END         &mkp MCLK        &kp INT3
+&kp PAGE_DOWN     &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                    &kp C_VOLUME_UP  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp EQUAL
+&kp NUMBER_0      &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp COLON                        &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INT1
+&mt LCTRL ESCAPE  &mt LEFT_ALT TAB  &kp LEFT_GUI  &trans        &trans         &trans    &trans  &trans                           &trans          &trans           &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -203,10 +203,10 @@
 
         CURSOR {
             bindings = <
-&kp F7  &kp F8  &kp F9  &kp F10  &trans                    &kp LA(LC(D))       &kp LA(LC(L))  &kp LA(LC(R))  &trans  &trans
-&kp F4  &kp F5  &kp F6  &kp F11  &trans                    &kp LA(LC(E))       &trans         &trans         &trans  &trans
-&kp F1  &kp F2  &kp F3  &kp F12  &trans                    &kp LA(LC(RETURN))  &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans                             &trans         &trans  &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F10                    &kp LA(LC(D))       &kp LA(LC(L))  &kp LA(LC(R))  &trans  &trans
+&trans  &kp F4  &kp F5  &kp F6  &kp F11                    &kp LA(LC(E))       &trans         &trans         &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F12                    &kp LA(LC(RETURN))  &trans         &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans                             &trans         &trans  &trans
             >;
         };
 
