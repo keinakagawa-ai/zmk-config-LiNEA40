@@ -45,10 +45,20 @@
     };
 };
 
-&msc_input_listener {
-    speed_up {
-        layers = <FUNCTION>;
-        input-processors = <&zip_wheel_scaler 2 1>; //スクロールを2倍速にする
+&msc_input_listener { 
+    normal {
+        layers = <0>;
+        input-processors = <&zip_wheel_scaler 1 1>;
+    };
+
+    warp {
+        layers = <2>;
+        input-processors = <&zip_wheel_scaler 4 1>;
+    };
+
+    precision {
+        layers = <4>;
+        input-processors = <&zip_wheel_scaler 1 8>;
     };
 };
 
