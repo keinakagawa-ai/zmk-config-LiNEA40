@@ -20,7 +20,7 @@
 &mmv {
     delay-ms = <20>;
     trigger-period-ms = <5>;
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <100>;
     acceleration-exponent = <2>;
 };
 
@@ -46,19 +46,9 @@
 };
 
 &msc_input_listener {
-    normal {
-        layers = <0>;
-        input-processors = <&zip_wheel_scaler 1 4>;
-    };
-
-    warp {
-        layers = <2>;
-        input-processors = <&zip_wheel_scaler 1 1>;
-    };
-
-    precision {
-        layers = <4>;
-        input-processors = <&zip_wheel_scaler 1 8>;
+    speed_up {
+        layers = <FUNCTION>;
+        input-processors = <&zip_wheel_scaler 1 1>; //スクロールを1倍速にする
     };
 };
 
