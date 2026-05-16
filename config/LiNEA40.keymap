@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 150
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
 
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -27,8 +27,8 @@
 //mouse scroll
 
 &msc {
-    delay-ms = <3>;
-    trigger-period-ms = <3>;
+    delay-ms = <20>;
+    trigger-period-ms = <5>;
     time-to-max-speed-ms = <100>;
     acceleration-exponent = <0>;
 };
