@@ -67,7 +67,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,
+            //スクロール方向を逆転,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -146,17 +146,17 @@
             label = "EMPLOYEE_NUMBER";
         };
 
-        my_word: my_word {
+        mw_mac: my_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp N &kp POUND &kp AT &kp T &kp S &kp U &kp H &kp AT &kp LS(Y) &kp N0 &kp LS(R) &kp U>;
             label = "MY_WORD";
         };
 
-        my_word_2: my_word_2 {
+        mw_win: my_word_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N &kp POUND &kp AT &kp T &kp S &kp U &kp H &kp AT &kp LS(Y) &kp N0 &kp LS(R) &kp U>;
+            bindings = <&none &kp N &kp POUND &kp NUMBER_2 &kp T &kp S &kp U &kp H &kp LS(NUMBER_2) &kp LS(Y) &kp N0 &kp LS(R) &kp U>;
             label = "MY_WORD_2";
         };
     };
@@ -181,7 +181,7 @@
             bindings = <
 &kp APOS          &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACE    &kp RIGHT_BRACE                         &trans            &kp HOME        &kp END         &mkp MB3         &trans
 &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &kp LS(EQUAL)                           &employee_number  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp EQUAL
-&kp LS(NUMBER_1)  &kp LS(APOS)      &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)                        &my_word          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp UNDERSCORE
+&kp LS(NUMBER_1)  &kp LS(APOS)      &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)                        &mw_mac           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp UNDERSCORE
 &mt LCTRL ESCAPE  &mt LEFT_ALT TAB  &kp LEFT_GUI      &trans            &trans            &trans    &kp DELETE  &trans                            &trans          &trans           &kp RIGHT_SHIFT
             >;
         };
@@ -251,10 +251,10 @@
 
         layer_7 {
             bindings = <
-&kp LS(NUMBER_7)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp RIGHT_BRACE  &kp BACKSLASH                        &trans  &trans  &trans  &trans  &kp INTERNATIONAL_3
-&kp LS(NUMBER_4)  &kp LS(NUMBER_5)   &kp LS(NUMBER_6)  &kp EQUAL        &kp LS(SEMICOLON)                    &trans  &trans  &trans  &trans  &trans
-&kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LEFT_BRACE   &kp APOSTROPHE                       &trans  &trans  &trans  &trans  &kp INTERNATIONAL_1
-&trans            &trans             &trans            &trans           &trans             &trans    &trans  &trans          &trans  &trans  &trans
+&kp LS(NUMBER_7)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp RIGHT_BRACE  &kp BACKSLASH                        &trans            &trans  &trans  &trans  &kp INTERNATIONAL_3
+&kp LS(NUMBER_4)  &kp LS(NUMBER_5)   &kp LS(NUMBER_6)  &kp EQUAL        &kp LS(SEMICOLON)                    &employee_number  &trans  &trans  &trans  &trans
+&kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LEFT_BRACE   &kp APOSTROPHE                       &mw_win           &trans  &trans  &trans  &kp INTERNATIONAL_1
+&trans            &trans             &trans            &trans           &trans             &trans    &trans  &trans                    &trans  &trans  &trans
             >;
         };
     };
