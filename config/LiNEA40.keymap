@@ -67,7 +67,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
+            //スクロール方向を逆転,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -190,10 +190,10 @@
 
         MARK {
             bindings = <
-&kp PAGE_UP       &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &trans                           &trans           &kp HOME        &kp END         &mkp MB3         &trans
-&kp PAGE_DOWN     &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                    &kp C_VOLUME_UP  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp EQUAL
-&kp NUMBER_0      &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp COLON                        &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&mt LCTRL ESCAPE  &mt LEFT_ALT TAB  &kp LEFT_GUI  &trans        &trans         &trans    &trans  &trans                           &trans          &trans           &kp RIGHT_SHIFT
+&kp PAGE_UP       &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &trans                                                &trans           &kp HOME        &kp END         &mkp MB3         &trans
+&kp PAGE_DOWN     &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                                         &kp C_VOLUME_UP  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp EQUAL
+&kp NUMBER_0      &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp COLON                                             &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_CONTROL
+&mt LCTRL ESCAPE  &mt LEFT_ALT TAB  &kp LEFT_GUI  &trans        &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))    &trans  &trans                           &trans          &trans           &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
@@ -251,10 +251,10 @@
 
         layer_7 {
             bindings = <
-&kp LS(NUMBER_7)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp RIGHT_BRACE  &kp BACKSLASH                        &trans            &trans  &trans  &trans  &kp INTERNATIONAL_3
-&kp LS(NUMBER_4)  &kp LS(NUMBER_5)   &kp LS(NUMBER_6)  &kp EQUAL        &kp LS(SEMICOLON)                    &employee_number  &trans  &trans  &trans  &trans
-&kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LEFT_BRACE   &kp APOSTROPHE                       &mw_win           &trans  &trans  &trans  &kp INTERNATIONAL_1
-&trans            &trans             &trans            &trans           &trans             &trans    &trans  &trans                    &trans  &trans  &trans
+&kp LS(NUMBER_7)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp RIGHT_BRACE  &kp BACKSLASH                        &trans            &trans  &trans              &trans              &kp INTERNATIONAL_3
+&kp LS(NUMBER_4)  &kp LS(NUMBER_5)   &kp LS(NUMBER_6)  &kp EQUAL        &kp LS(SEMICOLON)                    &employee_number  &trans  &trans              &kp LG(DOWN_ARROW)  &kp LG(LS(S))
+&kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LEFT_BRACE   &kp APOSTROPHE                       &mw_win           &trans  &kp LG(D)           &kp LG(DOWN_ARROW)  &kp INTERNATIONAL_1
+&trans            &trans             &trans            &trans           &trans             &trans    &trans  &trans                    &kp LG(LEFT_ARROW)  &trans              &kp LG(RIGHT_ARROW)
             >;
         };
     };
