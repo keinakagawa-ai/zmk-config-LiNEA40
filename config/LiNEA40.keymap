@@ -67,7 +67,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -251,10 +251,10 @@
 
         layer_7 {
             bindings = <
-&kp LS(NUMBER_7)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp RIGHT_BRACE  &kp BACKSLASH                        &trans            &trans  &trans              &trans              &kp INTERNATIONAL_3
-&kp LS(NUMBER_4)  &kp LS(NUMBER_5)   &kp LS(NUMBER_6)  &kp EQUAL        &kp LS(SEMICOLON)                    &employee_number  &trans  &trans              &kp RG(DOWN_ARROW)  &kp LS(RG(S))
-&kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LEFT_BRACE   &kp APOSTROPHE                       &mw_win           &trans  &kp RG(D)           &kp RG(DOWN_ARROW)  &kp INTERNATIONAL_1
-&trans            &trans             &trans            &trans           &trans             &trans    &trans  &trans                    &kp RG(LEFT_ARROW)  &trans              &kp RG(RIGHT_ARROW)
+&kp LS(NUMBER_7)  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp RIGHT_BRACKET  &kp BACKSLASH                        &kp INTERNATIONAL_3  &trans  &trans              &trans               &kp INTERNATIONAL_3
+&kp LS(NUMBER_4)  &kp LS(NUMBER_5)   &kp LS(NUMBER_6)  &kp EQUAL          &kp LS(SEMICOLON)                    &employee_number     &trans  &kp LG(UP_ARROW)    &kp LG(DOWN_ARROW)   &kp LS(RG(S))
+&kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LEFT_BRACKET   &kp APOSTROPHE                       &mw_win              &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp INTERNATIONAL_1
+&trans            &trans             &trans            &trans             &trans             &trans    &trans  &trans                       &trans              &trans               &trans
             >;
         };
     };
