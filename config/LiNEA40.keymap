@@ -18,9 +18,9 @@
 //mouse cursol
 
 &mmv {
-    delay-ms = <50>;
-    trigger-period-ms = <16>;
-    time-to-max-speed-ms = <300>;
+    delay-ms = <20>;
+    trigger-period-ms = <10>;
+    time-to-max-speed-ms = <200>;
     acceleration-exponent = <1>;
 };
 
