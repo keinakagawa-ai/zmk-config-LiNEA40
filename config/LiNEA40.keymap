@@ -73,6 +73,7 @@
 };
 
 / {
+    /*
     combos {
         compatible = "zmk,combos";
 
@@ -111,6 +112,7 @@
             key-positions = <26 27>;
         };
     };
+    */
 
     behaviors {
         re_kp: sensor_rotate_kp {
