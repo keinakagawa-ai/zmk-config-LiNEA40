@@ -135,9 +135,19 @@
             flavor = "balanced";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
+
+        mt_gui: mt_gui {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <300>;
+        require-prior-idle-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        };
+
     };
 
     macros {
@@ -171,7 +181,7 @@
 &kp Q          &kp W             &kp E                    &kp R    &kp T                                                      &kp Y           &kp U  &kp I         &kp O               &kp P
 &kp A          &kp S             &kp D                    &kp F    &kp G                                                      &kp H           &kp J  &kp K         &kp L               &my_lt 5 MINUS
 &kp Z          &kp X             &kp C                    &kp V    &kp B                                                      &kp N           &kp M  &kp COMMA     &kp DOT             &kp SLASH
-&mt LCTRL ESC  &mt LEFT_ALT TAB  &mt LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_1    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &my_lt 7 BACKSLASH  &mt RIGHT_SHIFT ESCAPE
+&mt LCTRL ESC  &mt LEFT_ALT TAB  &mt_gui LEFT_GUI LANGUAGE_2  &kp INS  &my_lt 1 SPACE  &my_lt 3 LANGUAGE_1    &my_lt 4 BACKSPACE  &my_lt 2 ENTER         &my_lt 6 TAB  &my_lt 7 BACKSLASH  &mt RIGHT_SHIFT ESCAPE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
