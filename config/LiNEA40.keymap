@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 150
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 90
 
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -56,17 +56,17 @@
 &msc_input_listener {
     normal {
         layers = <0>;
-        input-processors = <&zip_wheel_scaler 1 4>;
+        input-processors = <&zip_wheel_scaler 2 1>;
     };
 
     warp {
         layers = <2>;
-        input-processors = <&zip_wheel_scaler 1 1>;
+        input-processors = <&zip_wheel_scaler 5 1>;
     };
 
     precision {
         layers = <4>;
-        input-processors = <&zip_wheel_scaler 1 8>;
+        input-processors = <&zip_wheel_scaler 1 1>;
     };
 };
 
