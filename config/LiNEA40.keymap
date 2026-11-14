@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 90
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 135
 
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -28,7 +28,7 @@
 //mouse scroll
 
 &msc {
-    delay-ms = <3>;
+    delay-ms = <0>;
     trigger-period-ms = <3>;
     time-to-max-speed-ms = <30>;
     acceleration-exponent = <0>;
@@ -135,7 +135,7 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
-            tap-ms = <5>;
+            tap-ms = <8>;
         };
 
         my_lt: layer_toggle {
