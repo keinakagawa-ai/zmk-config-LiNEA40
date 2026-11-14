@@ -135,7 +135,7 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
-            tap-ms = <15>;
+            tap-ms = <5>;
         };
 
         my_lt: layer_toggle {
