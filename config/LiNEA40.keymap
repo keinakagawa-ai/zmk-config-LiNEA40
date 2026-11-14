@@ -59,15 +59,13 @@
         layers = <5>;
         input-processors = <&zip_wheel_scaler 2 1>;
     };
-
-    precision {
-        layers = <4>;
-        input-processors = <&zip_wheel_scaler 1 2>;
-    };
-
     normal {
-        layers = <0>;
+        layers = <4>;
         input-processors = <&zip_wheel_scaler 1 1>;
+    };
+    precision {
+        layers = <0>;
+        input-processors = <&zip_wheel_scaler 1 2>;
     };
 };
 
@@ -76,7 +74,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_trackball_scroll_scaler 1 50>,
+            <&zip_trackball_scroll_scaler 1 100>,
             <&zip_xy_to_scroll_mapper>;
     };
 };
