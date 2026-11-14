@@ -56,18 +56,18 @@
 
 &msc_input_listener {
     normal {
-        layers = <4>;
-        input-processors = <&zip_wheel_scaler 2 1>;
+        layers = <0>;
+        input-processors = <&zip_wheel_scaler 1 1>;
     };
 
     warp {
         layers = <5>;
-        input-processors = <&zip_wheel_scaler 6 1>;
+        input-processors = <&zip_wheel_scaler 2 1>;
     };
 
     precision {
-        layers = <0>;
-        input-processors = <&zip_wheel_scaler 1 1>;
+        layers = <4>;
+        input-processors = <&zip_wheel_scaler 1 2>;
     };
 };
 
