@@ -222,7 +222,7 @@
         MARK {
             bindings = <
 &kp PAGE_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                                &kp C_MUTE       &trans  &trans  &trans  &kp ESCAPE
-&kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                                         &kp C_VOLUME_UP  &trans  &trans  &trans  &kp LS(MINUS)
+&kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                                         &kp C_VOLUME_UP  &trans  &trans  &trans  &trans
 &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp APOSTROPHE                                        &kp C_VOL_DN     &trans  &trans  &trans  &kp RIGHT_CONTROL
 &trans         &trans        &trans        &trans        &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))    &trans  &trans                   &trans  &trans  &trans
             >;
@@ -284,10 +284,10 @@
 
         layer_7 {
             bindings = <
-&kp LS(N6)  &kp LS(APOS)      &kp LS(N8)  &kp RIGHT_BRACKET    &kp NON_US_HASH                    &kp INTERNATIONAL_3  &trans   &trans              &trans               &trans
-&kp LS(N4)  &kp LS(N5)        &kp EQUAL   &kp LS(MINUS)        &kp APOS                           &employee_number     &mw_mac  &kp LG(UP_ARROW)    &kp LG(DOWN_ARROW)   &kp LS(RG(S))
-&kp LS(N1)  &kp LEFT_BRACKET  &kp LS(N3)  &kp INTERNATIONAL_1  &kp LS(N2)                         &mw_win              &trans   &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(INTERNATIONAL_1)
-&trans      &trans            &trans      &trans               &trans           &trans    &trans  &kp LG(LS(S))                 &trans              &trans               &trans
+&kp LS(N6)  &kp LS(APOS)      &kp LS(N8)  &kp RIGHT_BRACKET    &kp NON_US_HASH                    &trans            &trans  &trans              &trans               &trans
+&kp LS(N4)  &kp LS(N5)        &kp EQUAL   &kp LS(MINUS)        &kp APOS                           &employee_number  &trans  &kp LG(UP_ARROW)    &kp LG(DOWN_ARROW)   &kp LS(RG(S))
+&kp LS(N1)  &kp LEFT_BRACKET  &kp LS(N3)  &kp INTERNATIONAL_1  &kp LS(N2)                         &mw_win           &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(INTERNATIONAL_1)
+&trans      &trans            &trans      &trans               &trans           &trans    &trans  &kp LG(LS(S))             &trans              &trans               &trans
             >;
         };
     };
