@@ -168,17 +168,17 @@
             bindings = <&kp>, <&kp>;
         };
 
-　　　　　lsft_z: lsft_z {
-　　　    compatible = "zmk,behavior-hold-tap";
-  　　　  #binding-cells = <2>;
-   　　　 flavor = "balanced";
-    　　　tapping-term-ms = <200>;
-   　　　 quick-tap-ms = <150>;
-  　　　  require-prior-idle-ms = <150>;
-  　　　  hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 36 37 38 39 40>;
-  　　　  hold-trigger-on-release;
-   　　　 bindings = <&kp>, <&kp>;
-　　　　　};
+        lsft_z: lsft_z {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 36 37 38 39 40>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+        };
 
     };
 
