@@ -197,10 +197,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E         &kp R    &kp T                                                              &kp Y               &kp U  &kp I                &kp O                     &kp P
-&kp A          &kp S         &kp D         &kp F    &kp G                                                              &kp H               &kp J  &kp K                &kp L                     &my_lt_ime 5 MINUS
-&kp Z          &kp X         &kp C         &kp V    &kp B                                                              &kp N               &kp M  &kp COMMA            &kp DOT                   &kp SLASH
-&mt LCTRL ESC  &kp LEFT_ALT  &kp LEFT_GUI  &kp INS  &my_lt_ime 1 SPACE  &my_lt_ime 3 LANGUAGE_2    &my_lt 4 BACKSPACE  &my_lt_ime 2 ENTER         &my_lt 6 LANGUAGE_1  &my_lt 7 INTERNATIONAL_1  &mt RIGHT_SHIFT ESC
+&kp Q             &kp W         &kp E         &kp R    &kp T                                                         &kp Y               &kp U  &kp I                &kp O                     &kp P
+&kp A             &kp S         &kp D         &kp F    &kp G                                                         &kp H               &kp J  &kp K                &kp L                     &my_lt_ime 5 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B                                                         &kp N               &kp M  &kp COMMA            &kp DOT                   &my_lt_ime 4 SLASH
+&mt LCTRL ESC     &kp LEFT_ALT  &kp LEFT_GUI  &kp INS  &my_lt_ime 1 SPACE  &my_lt_ime 3 LANGUAGE_2    &kp BACKSPACE  &my_lt_ime 2 ENTER         &my_lt 6 LANGUAGE_1  &my_lt 7 INTERNATIONAL_1  &mt RIGHT_SHIFT ESC
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -221,10 +221,10 @@
 
         MARK {
             bindings = <
-&kp PAGE_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                                &kp TAB          &kp HOME        &kp END         &mkp MB3         &kp ESCAPE
-&kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                                         &kp C_VOLUME_UP  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LS(MINUS)
-&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp APOSTROPHE                                        &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&trans         &trans        &trans        &trans        &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))    &trans  &trans                           &trans          &trans           &trans
+&kp PAGE_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                                &kp C_MUTE       &trans  &trans  &trans  &kp ESCAPE
+&kp PAGE_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON                                         &kp C_VOLUME_UP  &trans  &trans  &trans  &kp LS(MINUS)
+&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp APOSTROPHE                                        &kp C_VOL_DN     &trans  &trans  &trans  &kp RIGHT_CONTROL
+&trans         &trans        &trans        &trans        &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))    &trans  &trans                   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
@@ -234,10 +234,10 @@
 
         CURSOR {
             bindings = <
-&kp PAGE_UP    &kp F7  &kp F8  &kp F9  &kp F10                            &kp LA(LC(D))       &kp LA(LC(L))         &kp LA(LC(R))         &trans                &trans
-&kp PAGE_DOWN  &kp F4  &kp F5  &kp F6  &kp F11                            &kp LA(LC(E))       &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LS(LC(NUMBER_3))  &trans
-&trans         &kp F1  &kp F2  &kp F3  &kp F12                            &kp LA(LC(RETURN))  &trans                &trans                &trans                &trans
-&trans         &trans  &trans  &trans  &trans   &trans    &kp LANGUAGE_2  &kp LANGUAGE_1                            &trans                &trans                &trans
+&kp PAGE_UP    &kp F7  &kp F8  &kp F9  &kp F10                            &kp LA(LC(D))       &kp LA(LC(L))  &kp LA(LC(R))  &trans  &trans
+&kp PAGE_DOWN  &kp F4  &kp F5  &kp F6  &kp F11                            &kp LA(LC(E))       &trans         &trans         &trans  &trans
+&trans         &kp F1  &kp F2  &kp F3  &kp F12                            &kp LA(LC(RETURN))  &trans         &trans         &trans  &trans
+&trans         &trans  &trans  &trans  &trans   &trans    &kp LANGUAGE_2  &kp LANGUAGE_1                     &trans         &trans  &trans
             >;
         };
 
@@ -246,8 +246,8 @@
         FUNCTION {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &trans                    &trans  &kp LA(PRINTSCREEN)  &trans  &kp LC(LA(DELETE))
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &trans                    &trans  &kp LS(LG(S))        &trans  &kp LC(LS(ESCAPE))
-&trans  &trans  &trans  &kp F11  &kp F12                    &kp C_MUTE                &trans  &trans               &trans  &kp LC(LA(INS))
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &trans                    &trans  &trans               &trans  &kp LC(LS(ESCAPE))
+&trans  &trans  &trans  &kp F11  &kp F12                    &trans                    &trans  &trans               &trans  &trans
 &trans  &trans  &trans  &trans   &trans   &trans    &trans  &kp LS(LG(LC(NUMBER_4)))          &trans               &trans  &trans
             >;
 
@@ -271,10 +271,10 @@
 
         WIRELESS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans                               &trans          &trans        &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans                          &trans          &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                          &trans          &trans        &trans        &trans        &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
@@ -287,7 +287,7 @@
 &kp LS(N6)  &kp LS(APOS)      &kp LS(N8)  &kp RIGHT_BRACKET    &kp NON_US_HASH                    &kp INTERNATIONAL_3  &trans   &trans              &trans               &trans
 &kp LS(N4)  &kp LS(N5)        &kp EQUAL   &kp LS(MINUS)        &kp APOS                           &employee_number     &mw_mac  &kp LG(UP_ARROW)    &kp LG(DOWN_ARROW)   &kp LS(RG(S))
 &kp LS(N1)  &kp LEFT_BRACKET  &kp LS(N3)  &kp INTERNATIONAL_1  &kp LS(N2)                         &mw_win              &trans   &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(INTERNATIONAL_1)
-&trans      &trans            &trans      &trans               &trans           &trans    &trans  &trans                        &trans              &trans               &trans
+&trans      &trans            &trans      &trans               &trans           &trans    &trans  &kp LG(LS(S))                 &trans              &trans               &trans
             >;
         };
     };
