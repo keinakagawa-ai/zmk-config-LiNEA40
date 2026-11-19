@@ -272,8 +272,8 @@
         WIRELESS {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans                          &trans          &trans        &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans                          &trans          &trans        &trans        &trans        &bt BT_CLR
+&out OUT_USB  &out OUT_BLE  &out OUT_TOG  &none         &none                           &none           &none         &none         &none         &none
+&none         &none         &none         &none         &none                           &none           &none         &none         &none         &bt BT_CLR
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
             >;
 
@@ -285,7 +285,7 @@
         layer_7 {
             bindings = <
 &kp LS(N6)  &kp LS(APOS)      &kp LS(N8)  &kp RIGHT_BRACKET    &kp NON_US_HASH                    &trans            &trans  &trans              &trans               &trans
-&kp LS(N4)  &kp LS(N5)        &kp EQUAL   &kp LS(MINUS)        &kp APOS                           &employee_number  &trans  &kp LG(UP_ARROW)    &kp LG(DOWN_ARROW)   &kp LS(RG(S))
+&kp LS(N4)  &kp LS(N5)        &kp EQUAL   &kp LS(MINUS)        &kp APOS                           &employee_number  &trans  &kp LG(UP_ARROW)    &kp LG(DOWN_ARROW)   &trans
 &kp LS(N1)  &kp LEFT_BRACKET  &kp LS(N3)  &kp INTERNATIONAL_1  &kp LS(N2)                         &mw_win           &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(INTERNATIONAL_1)
 &trans      &trans            &trans      &trans               &trans           &trans    &trans  &kp LG(LS(S))             &trans              &trans               &trans
             >;
